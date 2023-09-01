@@ -1,0 +1,14 @@
+#!/bin/bash
+
+set -e
+
+echo "Installing gems..."
+bundle install
+
+echo "Setting up the database..."
+rails db:setup
+
+echo "Installing Node.js packages..."
+yarn install # or npm install
+
+echo "Setup complete!"

@@ -1,0 +1,9 @@
+#!/bin/bash
+
+set -e
+rails s -p 3000 -d 
+
+cd react-app && npm start 
+
+
+
